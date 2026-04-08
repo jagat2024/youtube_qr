@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube qr cards</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height:100vh;
+            width: 100vw;
+            background:linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 600px;
+            width: 360px;
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 20px;
+            align-items: center;
+            gap: 30px;
+            transition: all 0.3s ease;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        }
+      
+        .card img{
+            height: 300px;;
+            width:300px;
+            border-radius: 10px;
+            border-color: rgb(103, 103, 211);
+            border: 2px;
+        }
+        #des{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            color: rgb(125, 77, 220);
+            font-size: 35px;
+        }
+        #para{
+            font-style: italic;
+            color: rgb(38, 19, 75);
+            font-size: 1.3rem;
+        }
+        #des:hover{
+            color: #5a2bd8;
+            transition: 0.3s;
+        }
+        .container{
+            animation: gradientMove 5s infinite alternate;
+        }
+
+        @keyframes gradientMove{
+            0%{background: linear-gradient(90deg, #00C9FF, #92FE9D);}
+            100%{background: linear-gradient(90deg, #92FE9D, #00C9FF);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="My_QR_Code_1-1024.jpeg" alt="">
+            </div>
+            <div>
+                <h1 id="des">Scan the qr to enter into the song playlist on youtube</h1>
+                <p id="para">Discover my favorite songs collection on YouTube. 
+                Just scan the QR code and dive into music that matches every mood 🎶✨</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
